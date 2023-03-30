@@ -1,7 +1,5 @@
 # 進撃の巨人 (Attack on Titan) inspired Memory Card Game
 
-## Description
-
 This is a memory card game inspired by the [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-memory-card). And is built using HTML, CSS and JavaScript, and Reactjs.
 
 I have themed the game to be inspired by the anime [進撃の巨人 (Attack on Titan)](https://en.wikipedia.org/wiki/Attack_on_Titan_(TV_series)), which is one of my favourite anime.

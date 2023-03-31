@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Cards from "./components/Cards";
 
 function App() {
     const [currentScore, setCurrentScore] = useState(0);
@@ -12,6 +13,10 @@ function App() {
         }
     }
 
+    function resetScore() {
+        setCurrentScore(0);
+    }
+
     return (
         <div className="App">
             <h1>
@@ -20,17 +25,17 @@ function App() {
                 Memory Card Game
             </h1>
             <p>
-                <button class="help">How to Play?</button>
+                <button className="help">How to Play?</button>
             </p>
-            <div class="score-board">
-                <div class="current">
+            <div className="score-board">
+                <div className="current">
                     <strong>Current Score</strong>: <span>{currentScore}</span>
                 </div>
-                <div class="best">
+                <div className="best">
                     <strong>Best Score</strong>: <span>{bestScore}</span>
                 </div>
             </div>
-            <div class="cards"></div>
+            <Cards updateScore={updateScore} resetScore={resetScore} />
             <footer>
                 <p>
                     Made by <a href="https://github.com/r0hitm">Rohit Mehta</a>

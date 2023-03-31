@@ -1,6 +1,6 @@
 .App {
   min-width: 360px;
-  padding: 30px;
+  /* padding: 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@ a:link {
 .card {
   height: 130px;
   width: 100px;
-  background: #d9d9d9; /* replace with image */
+  /* background: #d9d9d9; replace with image */
 }
 
 .cards {

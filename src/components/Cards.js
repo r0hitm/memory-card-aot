@@ -6,56 +6,44 @@ const imagePaths = images.keys().map(path => images(path));
 // console.log(imagePaths);
 
 export default function Cards({ updateScore, resetScore }) {
-    // cards list is stored as an array of booleans, where true means the card has been clicked
+    // Array of booleans to keep track of which cards have been clicked
     const [cards, setCards] = useState(Array(imagePaths.length).fill(false));
-    //console.log(cards); // DEBUG
+
+    function handleClick(i) {
+        console.log("Card clicked"); // DEBUG
+        if (cards[i]) {
+            resetScore();
+            setCards(Array(imagePaths.length).fill(false));
+        } else {
+            updateScore();
+            setCards([...cards.slice(0, i), true, ...cards.slice(i + 1)]);
+        }
+    }
 
     return (
         <div className="cards">
-            {cards.map((clicked, id) => (
+            {cards.map((clicked, i) => (
                 <Card
-                    key={id}
-                    id={id + 1}
-                    updateScore={_ => {
-                        updateScore();
-                        setCards([
-                            ...cards.slice(0, id),
-                            true,
-                            ...cards.slice(id + 1),
-                        ]);
-                    }}
-                    reset={_ => {
-                        resetScore();
-                        setCards(Array(imagePaths.length).fill(false));
-                    }}
-                    img={imagePaths[id]}
-                    clickState={clicked}
+                    key={i}
+                    onClick={() => handleClick(i)}
+                    imgPath={imagePaths[i]}
+                    // clickState={clicked}
                 />
             ))}
         </div>
     );
 }
 
-function Card({ id, updateScore, reset, img, clickState }) {
-    const [clicked, setClicked] = useState(clickState);
-
-    function handleClick() {
-        console.log("Card clicked"); // DEBUG
-        if (clicked) {
-            reset();
-        } else {
-            updateScore();
-            setClicked(true);
-        }
-    }
+function Card({ onClick, imgPath, clickState }) {
+    // const [clicked, setClicked] = useState(clickState);
+    // const [imageURL, setImageURL] = useState(img);
 
     return (
         <div
             className="card"
-            data-id={id}
-            onClick={handleClick}
+            onClick={onClick}
             style={{
-                backgroundImage: `url(${img})`,
+                backgroundImage: `url(${imgPath})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

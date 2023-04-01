@@ -11,6 +11,12 @@ function App() {
         if (currentScore + 1 > bestScore) {
             setBestScore(currentScore + 1);
         }
+
+        // User got a perfect score
+        if (currentScore + 1 === 21) {
+            alert("Oh my! You have a perfect memory!");
+            resetScore();
+        }
     }
 
     function resetScore() {
@@ -25,7 +31,7 @@ function App() {
                 Memory Card Game
             </h1>
             <p>
-                <button className="help">How to Play?</button>
+                <button className="help" onClick={showHelp}>How to Play?</button>
             </p>
             <div className="score-board">
                 <div className="current">
@@ -49,6 +55,12 @@ function App() {
                 </p>
             </footer>
         </div>
+    );
+}
+
+function showHelp() {
+    alert(
+        "Click on each card to earn points, but don't click on any more than once! If you do, you lose! Good luck!"
     );
 }
 

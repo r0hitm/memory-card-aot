@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/memory-card-aot/static/css/main.48b6374f.css",
+    "main.js": "/memory-card-aot/static/js/main.c69e4bb2.js",
+    "static/js/787.bb8d8c94.chunk.js": "/memory-card-aot/static/js/787.bb8d8c94.chunk.js",
+    "static/media/9.jpg": "/memory-card-aot/static/media/9.e3660f96c977e59dd91e.jpg",
+    "static/media/11.jpg": "/memory-card-aot/static/media/11.acbef12c781d3e9593b4.jpg",
+    "static/media/19.jpg": "/memory-card-aot/static/media/19.c67bc2d72964bc156e8d.jpg",
+    "static/media/10.jpg": "/memory-card-aot/static/media/10.99e9e34b428c9b909853.jpg",
+    "static/media/6.jpg": "/memory-card-aot/static/media/6.db7cac9a3e4ebbcd4451.jpg",
+    "static/media/8.jpg": "/memory-card-aot/static/media/8.5e998081f0908b5f217b.jpg",
+    "static/media/4.jpg": "/memory-card-aot/static/media/4.a7282dc9d0734b916e12.jpg",
+    "static/media/1.jpg": "/memory-card-aot/static/media/1.ef3767c9dfb8622d8080.jpg",
+    "static/media/18.jpg": "/memory-card-aot/static/media/18.3913b0ac3bf9c351b9ee.jpg",
+    "static/media/2.jpg": "/memory-card-aot/static/media/2.f013a413fccbdde311bd.jpg",
+    "static/media/16.jpg": "/memory-card-aot/static/media/16.23b0517f21f594bedf60.jpg",
+    "static/media/13.jpg": "/memory-card-aot/static/media/13.dd700cf293a493447ad9.jpg",
+    "static/media/20.jpg": "/memory-card-aot/static/media/20.22853cf09132c3f5d5b7.jpg",
+    "static/media/7.jpg": "/memory-card-aot/static/media/7.3ab0d4f0f75ce6168b32.jpg",
+    "static/media/17.jpg": "/memory-card-aot/static/media/17.9ebcbb77c357dc1df7df.jpg",
+    "static/media/15.jpg": "/memory-card-aot/static/media/15.e956f801828f4c8a5a8a.jpg",
+    "static/media/21.jpg": "/memory-card-aot/static/media/21.6aec811d20f21079376d.jpg",
+    "index.html": "/memory-card-aot/index.html",
+    "main.48b6374f.css.map": "/memory-card-aot/static/css/main.48b6374f.css.map",
+    "main.c69e4bb2.js.map": "/memory-card-aot/static/js/main.c69e4bb2.js.map",
+    "787.bb8d8c94.chunk.js.map": "/memory-card-aot/static/js/787.bb8d8c94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48b6374f.css",
+    "static/js/main.c69e4bb2.js"
+  ]
+}

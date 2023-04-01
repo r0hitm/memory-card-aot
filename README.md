@@ -10,7 +10,7 @@ The objective is to click on each picture exactly once to score a point. Clickin
 
 ## Live Demo
 
-👉 [Live Demo](#)
+👉 [Live Demo](https://r0hitm.github.io/memory-card-aot)
 
 ----
 Author: [Rohit Mehta](https://github.com/r0hit)

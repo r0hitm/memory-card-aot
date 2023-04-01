@@ -4,12 +4,13 @@ import Cards from "./components/Cards";
 
 function App() {
     const [currentScore, setCurrentScore] = useState(0);
-    const [bestScore, setBestScore] = useState(0);
+    const [bestScore, setBestScore] = useState(localStorage.getItem("bestScore") || 0);
 
     function updateScore() {
         setCurrentScore(currentScore + 1);
         if (currentScore + 1 > bestScore) {
             setBestScore(currentScore + 1);
+            localStorage.setItem("bestScore", currentScore + 1);
         }
 
         // User got a perfect score

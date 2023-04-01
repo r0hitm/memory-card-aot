@@ -80,8 +80,6 @@ function Card({ onClick, cardImg }) {
             onClick={onClick}
             style={{
                 backgroundImage: `url(${cardImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
             }}
         ></div>
     );
